@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
 :root {
-    --purple: #5280e2;
-    --green: #15cdcb;
-    --bg-dark: #212226;
+    --red: #B20928;
+    --blue: #261EE4;
+    --bg-dark: #090B0D;
     --light-grey: #e0dede;
     --menu-height: 75px;
+    --text-color: #E0DEDE;
 }
 
 * {
@@ -19,37 +22,31 @@ html, body {
 
 body, button, input, select, textarea {
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 h1 {
     font-size: 44px;
+    font-family: 'Space Grotesk';
 }
 
 h2 {
     font-size: 24px;
-}
-
-p {
-    color: var(--light-grey);
+    font-family: 'Space Grotesk';
 }
 
 button {
-    background: var(--purple);
+    background: var(--blue);
     border: 0;
-    border-radius: 16px;
-    padding: 8px 35px;
+    padding: 12px 35px;
     color: #ffffff;
+    font-family: 'Space Grotesk';
     font-weight: bold;
     font-size: 16px;
 }
 
-.title-purple {
-    color: var(--purple);
-}
-
-.title-green {
-    color: var(--green);
+.title-blue {
+    color: var(--blue);
 }
 
 header {
@@ -96,8 +93,9 @@ nav ul {
 }
 
 nav ul a {
-    font-size: 24px;
-    color: var(--green);
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -134,7 +132,7 @@ nav ul a svg {
 .about-me .img-container .line {
     width: calc(50% + 50px);
     height: calc(100% + 50px);
-    border: 1px solid var(--purple);
+    border: 1px solid var(--red);
 
     position: absolute;
     top: -25px;
@@ -144,7 +142,53 @@ nav ul a svg {
 
 .about-me .img-container .line.green {
     transform: rotate(-3.3deg);
-    color: var(--green);
+    color: var(--blue);
+}
+
+.services {
+    text-align: center;
+    margin: 150px 0;
+    padding: 0 100px;
+}
+
+.services-container {
+    margin: 60px auto 0;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    max-width: 1200px;
+
+}
+
+.services .services-container .services-card {
+    max-width: 360px;
+    padding: 35px;
+    background: var(--bg-dark);
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient( to bottom, rgba(184, 194, 204, 1), rgba(184, 194, 204, 0)) 1;
+
+
+} 
+.services .services-container .inverse {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient( to top, rgba(184, 194, 204, 1), rgba(184, 194, 204, 0)) 1;
+}
+
+.services .services-container .services-card img {
+    margin: 40px 0;
+    width: 20%;
+
+}
+
+.services .services-container .services-card p {
+    color: var(--text-color);
+
+}
+
+.services-card + .services-card {
+    margin-left: 15px;
 }
 
 /* Responsive */
