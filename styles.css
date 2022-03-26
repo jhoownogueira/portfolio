@@ -200,7 +200,7 @@ nav ul a svg {
     }
     
     nav ul a {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     nav {
@@ -222,6 +222,37 @@ nav ul a svg {
     .about-me .img-container {
         margin: 70px 0;
     }
+
+    .services {
+        padding: 0;
+    }
+
+    .services .services-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-card {
+        height: 394px;
+    }
+
+    .services .services-container .services-card {
+        border-width: 1px;
+        border-style: solid;
+        border-image: linear-gradient( to top, rgba(184, 194, 204, 1), rgba(184, 194, 204, 1)) 1;
+    }
+
+    .services .services-container .inverse {
+        border-width: 1px;
+        border-style: solid;
+        border-image: linear-gradient( to top, rgba(184, 194, 204, 1), rgba(184, 194, 204, 1)) 1;
+    }
+
+    .services-card + .services-card {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
 }
 
 /* Tablet */
@@ -233,6 +264,7 @@ nav ul a svg {
     header .container img {
         display: inline;
         margin-bottom: 70px;
+        width: 30%;
     }
 
     nav {
@@ -278,5 +310,13 @@ nav ul a svg {
     .about-me {
         padding: 40px;
     }
+
+    .services {
+        margin: 70px 0;
+    }
+
+    .services .services-container {
+    padding: 0 20px;
+}
 
 }
