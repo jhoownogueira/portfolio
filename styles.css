@@ -45,6 +45,16 @@ button {
     font-size: 16px;
 }
 
+.secondary-button {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.secondary-button img{
+    margin-right: 15px;
+}
+
 .title-blue {
     color: var(--blue);
 }
@@ -271,6 +281,32 @@ p {
     margin: 0;
 }
 
+.curriculum {
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculum .container {
+    display: flex;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.curriculum .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.curriculum .container .content .curriculum-info {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+}
 
 /* Responsive */
 
@@ -340,6 +376,18 @@ p {
         margin-bottom: 0;
         padding-bottom: 100px;
     }
+
+    .curriculum .container {
+        flex-wrap: wrap;
+    }
+
+    .curriculum .container .curriculum-img {
+        display: block;
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 520px;
+    }
+
 }
 
 /* Tablet */
@@ -418,4 +466,13 @@ p {
     .portfolio .portfolio-container {
         margin-top: 70px;
     }
+
+    .curriculum {
+        padding: 0 20px;
+    }
+
+    .curriculum .container .content .curriculum-info {
+        padding: 0 15px;
+    }
+
 }
