@@ -303,7 +303,7 @@ p {
 
 .curriculum .container .content .curriculum-info {
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: auto auto;
     grid-gap: 1rem;
     margin-bottom: 50px;
 }
@@ -472,7 +472,7 @@ p {
     }
 
     .curriculum .container .content .curriculum-info {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
 }
