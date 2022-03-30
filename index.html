@@ -22,14 +22,14 @@
     <nav>
         <img src="assets/logojhoow.png" alt="Logo">
         <ul>
-            <a href=""><i data-feather="user"></i>Sobre mim</a>
-            <a href=""><i data-feather="briefcase"></i>Serviços</a>
-            <a href=""><i data-feather="image"></i>Portfólio</a>
-            <a href=""><i data-feather="list"></i>Currículo</a>
-            <a href=""><i data-feather="send"></i>Contato</a>
+            <a href="#aboutme"><i data-feather="user"></i>Sobre mim</a>
+            <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+            <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+            <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+            <a href="#contact"><i data-feather="send"></i>Contato</a>
         </ul>
     </nav>
-    <section class="about-me">
+    <section id="aboutme" class="about-me">
         <div class="container">
             <h1 class="title-blue">Sobre mim</h1>
             <p>
@@ -46,7 +46,7 @@
             <img src="assets/jhoow.jpg" alt="Jhonata Nogueira">
         </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
         <h1 class="title-blue">Serviços</h1>
         <div class="services-container">
             <div class="services-card">
@@ -66,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h1 class="title-blue">Portfolio</h1>
         <div class="portfolio-container">
             <div class="portfolio-card">
@@ -122,7 +122,7 @@
             </div>
         </div>
     </section>
-    <section class="curriculum">
+    <section id="curriculum" class="curriculum">
         <h1 class="title-blue">Currículo</h1>
         <div class="container">
             <img class="curriculum-img" src="assets/curriculo.png">
@@ -145,6 +145,20 @@
             </div>
         </div>
     </section>
+    <section id="contact" class="contact">
+    <h1>Vamos trabalhar juntos?</h1>
+    <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou faça parte do seu time, entre em contato comigo!</p>
+    <button onclick="window.open('https://api.whatsapp.com/send?phone=5517981026681')">Entre em contato</button>
+    <div class="social-media">
+        <a href=""><img src="assets/instragram-icon.png" alt="Instagram Logo"></a>
+        <a href=""><img src="assets/linkedin-icon.png" alt="Linkedin Logo"></a>
+        <a href=""><img src="assets/github-icon.png" alt="Github Logo"></a>
+        <a href="https://api.whatsapp.com/send?phone=5517981026681"><img src="assets/whatsapp-icon.png" alt="Whatsapp Logo"></a>
+    </div>
+    </section>
+    <footer>
+        <p>Made by Jhonata Nogueira - 2022</p>
+    </footer>
     <script>
         feather.replace()
       </script>
